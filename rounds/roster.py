@@ -22,7 +22,7 @@ class RosterSnapshot:
 
 
 def build_roster(body):
-    object_fields(body, 'round_id', 'works', 'reviewers')
+    object_fields(body, 'round_id', 'works', 'reviewers', *_optional(body, 'dual_review'))
     round_id = required_text(body['round_id'], 'round_id')
     reviewers = {}
     for item in array(body['reviewers'], 'reviewers'):
@@ -38,6 +38,10 @@ def build_roster(body):
 
 def same_roster(left, right):
     return left == right
+
+
+def _optional(body, field):
+    return (field,) if isinstance(body, dict) and field in body else ()
 
 
 def init_rosters(connection):
