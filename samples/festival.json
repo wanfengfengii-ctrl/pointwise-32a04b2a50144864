@@ -1,0 +1,42 @@
+{
+  "round_id": "R",
+  "works": [
+    {
+      "work_id": "Q",
+      "group": "乙",
+      "proof": {
+        "revision_id": "score-Q-1",
+        "author": "南岸青声队",
+        "segments": [
+          {"segment_id": "T1", "window": [0, 4], "text": "晨光落在窗前"},
+          {"segment_id": "T2", "window": [4, 8], "text": "齐声越过山岗"}
+        ],
+        "window": [2, 6]
+      }
+    },
+    {
+      "work_id": "P",
+      "group": "甲",
+      "proof": {
+        "revision_id": "score-P-1",
+        "author": "柳桥和声队",
+        "segments": [
+          {"segment_id": "S1", "window": [0, 4], "text": "溪水绕过石桥"},
+          {"segment_id": "S2", "window": [4, 8], "text": "和声停在晚风"}
+        ],
+        "window": [2, 6]
+      }
+    }
+  ],
+  "reviewers": [
+    {"reviewer_id": "C", "group": "丙"},
+    {"reviewer_id": "A", "group": "甲"},
+    {"reviewer_id": "B", "group": "乙"}
+  ],
+  "comments": {
+    "W01/B": "换段时请统一气口。",
+    "W01/C": "桥字收音可再轻些。",
+    "W02/A": "晨光一词保持连音。",
+    "W02/C": "入第二段前听低声部。"
+  }
+}
